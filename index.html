@@ -48,6 +48,31 @@
             user-select: none;
         }
 
+        /* Default styles (optional) */
+        body {
+            background-color: white;
+            color: black;
+        }
+
+        /* Styles for dark mode */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: black;
+                color: white;
+            }
+            .bwimg{
+                filter: invert(1);
+            }
+        }
+
+        /* Styles for light mode (optional, to override default) */
+        @media (prefers-color-scheme: light) {
+            body {
+                background-color: white;
+                color: black;
+            }
+        }        
+
         @media (min-width: 768px) {
             .bd-placeholder-img-lg {
                 font-size: 3.5rem;
@@ -201,7 +226,7 @@
         <h1 class="visually-hidden">T3R4H3RTZ_G4P</h1>
 
         <div class="px-4 py-5 my-5 text-center">
-            <img class="d-block mx-auto mb-4" src="img/growth_logo.png" alt="" width="412">
+            <img class="d-block mx-auto mb-4 bwimg" src="img/growth_logo.png" alt="" width="412">
             <h1 class="display-5 fw-bold text-body-emphasis"></h1>
             <div class="col-lg-6 mx-auto">
                 <br/>
@@ -540,7 +565,7 @@
  
                 </div>
                 <div class="col-10 col-sm-8 col-lg-6">
-                    <img src="img/meridians_left.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                    <img src="img/meridians_left.jpg" class="d-block mx-lg-auto img-fluid bwimg" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
                 </div>
             </div>
         </div>
@@ -562,7 +587,7 @@
                         </svg>
                     </div>
                     <h3 class="fs-2 text-body-emphasis">Amplification</h3>
-                    <p>MCP6N11, INA333, AD8221, LMP7701  and OPA1612, OPA2134 and *BYO-AMP:. Functional Near-Infrared Spectroscopy hardware for introductory biophotonic emission experiments. fNIRS</p>
+                    <p>MCP6N11, INA333, AD8221, LMP7701 and OPA1612, OPA2134 and *BYO-AMP:. Functional Near-Infrared Spectroscopy hardware for introductory biophotonic emission experiments. fNIRS</p>
                     <a href="#" class="icon-link">
                         SPECIFICATIONS
                         <svg class="bi">
@@ -624,7 +649,7 @@
         <div class="container col-xxl-8 px-4 ">
             <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
                 <div class="col-10 col-sm-8 col-lg-6">
-                    <img src="img/veggievectors.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                    <img src="img/veggievectors.jpg" class="d-block mx-lg-auto img-fluid bwimg" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
                 </div>
                 <div class="col-lg-6">
                     <br/>
